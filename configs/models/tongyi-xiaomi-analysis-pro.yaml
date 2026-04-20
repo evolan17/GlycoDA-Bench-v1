@@ -1,0 +1,8 @@
+name: tongyi_xiaomi_analysis_pro
+provider: openai_compatible
+model: tongyi-xiaomi-analysis-pro
+api_key_env: OPENAI_API_KEY
+base_url_env: OPENAI_BASE_URL
+base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+temperature: 0.0
+supports_tool_calling: true

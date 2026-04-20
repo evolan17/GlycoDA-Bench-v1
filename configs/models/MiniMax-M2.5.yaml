@@ -1,0 +1,8 @@
+name: MiniMax-M2.5
+provider: openai_compatible
+model: MiniMax-M2.5
+api_key_env: OPENAI_API_KEY
+base_url_env: OPENAI_BASE_URL
+base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+temperature: 0.0
+supports_tool_calling: true

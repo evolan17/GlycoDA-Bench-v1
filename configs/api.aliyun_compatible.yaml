@@ -1,0 +1,26 @@
+# 阿里云百炼 DashScope — OpenAI 兼容模式（与现有 api.yaml / api.local.yaml 并存，按需选用）
+# 文档: https://help.aliyun.com/zh/model-studio/developer-reference/use-qwen-by-calling-api
+#
+# 用法示例:
+#   python -m src.app.run_benchmark --api-config configs/api.aliyun_compatible.yaml ...
+#   python -m src.app.run_single_model --api-config configs/api.aliyun_compatible.yaml ...
+#
+# 鉴权: 在环境变量 OPENAI_API_KEY 中填入 DashScope API Key（与现有 Qwen 类 model 配置一致），
+#       或在本文件填写 api_key（请勿将含密钥的修改提交到公共仓库）。
+#       若你习惯使用 DASHSCOPE_API_KEY，可在 shell / .env 里同时设置：
+#   set OPENAI_API_KEY=%DASHSCOPE_API_KEY%   (Windows cmd)
+#   $env:OPENAI_API_KEY = $env:DASHSCOPE_API_KEY   (PowerShell)
+
+provider: openai_compatible
+base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+api_key: ""
+api_key_env: OPENAI_API_KEY
+base_url_env: OPENAI_BASE_URL
+# 可在本文件顶层指定默认模型（与部分 model yaml 的 model 字段配合使用）:
+# model: qwen3.5-plus
+
+# 可选：弱网下减少因代理/TLS 导致的失败（与 api.yaml 相同字段）
+# llm_timeout_sec: 600
+# llm_http_max_retries: 2
+# llm_outer_attempts: 4
+# llm_retry_backoff_sec: 1.5

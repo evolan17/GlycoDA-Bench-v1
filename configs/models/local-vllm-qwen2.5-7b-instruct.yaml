@@ -1,0 +1,9 @@
+name: local-vllm-qwen2.5-7b-instruct
+provider: local_openai_http
+model: Qwen2.5-7B-Instruct
+api_key_env: LOCAL_OPENAI_API_KEY
+base_url_env: LOCAL_OPENAI_BASE_URL
+base_url: http://127.0.0.1:8000/v1
+allow_missing_api_key: true
+temperature: 0.0
+supports_tool_calling: true

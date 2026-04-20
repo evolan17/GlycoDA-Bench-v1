@@ -1,0 +1,8 @@
+provider: local_openai_http
+base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+# Local deployments usually do not require API key.
+# If your server requires one, set it here and update api_key_env.
+api_key: sk-7b2a438a03db4fcea9e06eed3a4d495e
+api_key_env: LOCAL_OPENAI_API_KEY
+base_url_env: LOCAL_OPENAI_BASE_URL
+# model: Qwen2.5-7B-Instruct

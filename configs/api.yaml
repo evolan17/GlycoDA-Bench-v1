@@ -1,0 +1,12 @@
+provider: openai_compatible
+base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+# Use OPENAI_API_KEY env / .env, OR paste key in quotes (YAML needs quotes for some tokens):
+api_key: ""
+api_key_env: OPENAI_API_KEY
+base_url_env: OPENAI_BASE_URL
+# model: qwen3.5-plus
+# Optional: reduce flaky benchmark runs on unstable networks (proxy/TLS).
+# llm_timeout_sec: 600
+# llm_http_max_retries: 2
+# llm_outer_attempts: 4
+# llm_retry_backoff_sec: 1.5

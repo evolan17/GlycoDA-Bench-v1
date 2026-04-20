@@ -1,0 +1,6 @@
+provider: openai_compatible
+base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+api_key: sk-7b2a438a03db4fcea9e06eed3a4d495e
+api_key_env: OPENAI_API_KEY
+base_url_env: OPENAI_BASE_URL
+# model: qwen3.5-plus

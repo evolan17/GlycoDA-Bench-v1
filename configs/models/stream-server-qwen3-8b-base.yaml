@@ -1,0 +1,9 @@
+name: qwen3-8b-base-agent-test
+provider: stream_server_http
+model: qwen3-8b-base-agent-test
+base_url: http://stream-server-online-sbs-11331.turbotke.production.polaris:8080/openapi/chat/completions
+allow_missing_api_key: true
+temperature: 0.7
+supports_tool_calling: false
+ss_wsid: "11331"
+ss_auth_token: "7auGXNATFSKl7dF"

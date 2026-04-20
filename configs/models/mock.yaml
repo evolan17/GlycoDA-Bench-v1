@@ -1,0 +1,5 @@
+name: mock_demo
+provider: mock
+model: mock-workflow-planner
+temperature: 0.0
+supports_tool_calling: true
